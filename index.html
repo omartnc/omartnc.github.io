@@ -1,800 +1,446 @@
-<!--
-author: Boostraptheme
-author URL: https://boostraptheme.com
-License: Creative Commons Attribution 4.0 Unported
-License URL: https://creativecommons.org/licenses/by/4.0/
--->
-
-<!DOCTYPE html>
+﻿<!DOCTYPE html>
 <html lang="en">
 
 <head>
   <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-  <meta name="description" content="">
-  <meta name="author" content="">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#0d47a1">
+  <meta name="theme-color" media="(prefers-color-scheme: dark)" content="#0d1524">
+  <meta name="description" content="Omer Tunc — Full Stack Software Developer in Toronto with 8+ years of experience building web applications with ASP.NET, Node.js, React and SQL.">
+  <meta name="author" content="Omer Tunc">
+  <meta property="og:title" content="Omer Tunc — Full-Stack Software Developer">
+  <meta property="og:description" content="8+ years of experience building web applications with ASP.NET, Node.js, React and SQL.">
+  <meta property="og:type" content="website">
+  <meta property="og:image" content="https://omartnc.github.io/img/og-image.png">
+  <meta property="og:image:width" content="1200">
+  <meta property="og:image:height" content="630">
 
   <link rel="shortcut icon" href="img/favicon.ico">
-  <title>Omer Tunc - Full Stack Software Developer</title>
+  <title>Omer Tunc — Full-Stack Software Developer</title>
 
-  <!-- Global stylesheets -->
-  <link href="css/bootstrap/bootstrap.min.css" rel="stylesheet">
-  <link href="https://fonts.googleapis.com/css?family=Saira+Extra+Condensed:100,200,300,400,500,600,700,800,900"
-    rel="stylesheet">
-  <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i,800,800i"
-    rel="stylesheet">
-  <link href="font-awesome/css/font-awesome.min.css" rel="stylesheet">
-  <link href="css/devicons/css/devicons.min.css" rel="stylesheet">
-  <link href="css/simple-line-icons/css/simple-line-icons.css" rel="stylesheet">
-  <link href="css/style.css" rel="stylesheet">
+  <link href="css/main.css" rel="stylesheet">
 </head>
 
 <body id="page-top">
 
-  <nav class="navbar navbar-expand-lg navbar-dark bg-primary fixed-top" id="sideNav">
-    <a class="navbar-brand js-scroll-trigger" href="#page-top">
-      <span class="d-block d-lg-none  mx-0 px-0"><img src="img/logo-white.png" alt="" class="img-fluid"></span>
+  <svg xmlns="http://www.w3.org/2000/svg" class="icon-sprite" aria-hidden="true">
+    <symbol id="icon-linkedin" viewBox="0 0 24 24"><path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433c-1.144 0-2.063-.926-2.063-2.065 0-1.138.92-2.063 2.063-2.063 1.14 0 2.064.925 2.064 2.063 0 1.139-.925 2.065-2.064 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.225 0z"/></symbol>
+    <symbol id="icon-github" viewBox="0 0 24 24"><path d="M12 .297c-6.63 0-12 5.373-12 12 0 5.303 3.438 9.8 8.205 11.385.6.113.82-.258.82-.577 0-.285-.01-1.04-.015-2.04-3.338.724-4.042-1.61-4.042-1.61C4.422 18.07 3.633 17.7 3.633 17.7c-1.087-.744.084-.729.084-.729 1.205.084 1.838 1.236 1.838 1.236 1.07 1.835 2.809 1.305 3.495.998.108-.776.417-1.305.76-1.605-2.665-.3-5.466-1.332-5.466-5.93 0-1.31.465-2.38 1.235-3.22-.135-.303-.54-1.523.105-3.176 0 0 1.005-.322 3.3 1.23.96-.267 1.98-.399 3-.405 1.02.006 2.04.138 3 .405 2.28-1.552 3.285-1.23 3.285-1.23.645 1.653.24 2.873.12 3.176.765.84 1.23 1.91 1.23 3.22 0 4.61-2.805 5.625-5.475 5.92.42.36.81 1.096.81 2.22 0 1.606-.015 2.896-.015 3.286 0 .315.21.69.825.57C20.565 22.092 24 17.592 24 12.297c0-6.627-5.373-12-12-12"/></symbol>
+    <symbol id="icon-pin" viewBox="0 0 24 24"><path d="M12 21s-7-5.1-7-11a7 7 0 0 1 14 0c0 5.9-7 11-7 11z" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/><circle cx="12" cy="10" r="2.5" fill="none" stroke="currentColor" stroke-width="2"/></symbol>
+    <symbol id="icon-close" viewBox="0 0 24 24"><path d="M6 6l12 12M18 6L6 18" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></symbol>
+  </svg>
 
+  <a class="skip-link" href="#about">Skip to content</a>
+
+  <header class="site-nav" id="sideNav">
+    <a class="site-nav__brand" href="#page-top">
+      <span class="site-nav__monogram" aria-hidden="true">OT</span>
+      <span class="site-nav__name">Omer Tunc<small>Full-Stack Developer</small></span>
     </a>
-    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
-      aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-      <span class="navbar-toggler-icon"></span>
+    <button class="site-nav__toggle" id="navToggle" type="button" aria-controls="siteNavMenu" aria-expanded="false">
+      <svg class="site-nav__icon-menu" aria-hidden="true" viewBox="0 0 24 24" width="22" height="22"><path d="M3 6h18M3 12h18M3 18h18" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></svg>
+      <svg class="site-nav__icon-close" aria-hidden="true" viewBox="0 0 24 24" width="22" height="22"><path d="M6 6l12 12M18 6L6 18" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></svg>
+      <span class="visually-hidden">Toggle menu</span>
     </button>
-    <div class="collapse navbar-collapse" id="navbarSupportedContent">
-      <ul class="navbar-nav">
-        <li class="nav-item">
-          <a class="nav-link js-scroll-trigger" href="#about">About</a>
+    <nav class="site-nav__menu" id="siteNavMenu" aria-label="Primary">
+      <ul class="site-nav__list">
+        <li><a class="site-nav__link is-active" href="#about" aria-current="true">About</a></li>
+        <li><a class="site-nav__link" href="#experience">Experience</a></li>
+        <li><a class="site-nav__link" href="#portfolio">Portfolio</a></li>
+        <li><a class="site-nav__link" href="#projects">Personal Projects</a></li>
+        <li><a class="site-nav__link" href="#skills">Skills</a></li>
+        <li><a class="site-nav__link" href="#education">Education</a></li>
+        <li><a class="site-nav__link" href="#contact">Contact</a></li>
+      </ul>
+      <ul class="site-nav__social">
+        <li>
+          <a target="_blank" rel="noopener noreferrer" aria-label="LinkedIn" href="https://www.linkedin.com/in/omertunc/">
+            <svg aria-hidden="true" viewBox="0 0 24 24" width="18" height="18" fill="currentColor"><use href="#icon-linkedin"/></svg>
+          </a>
         </li>
-        <li class="nav-item">
-          <a class="nav-link js-scroll-trigger" href="#experience">Experience</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link js-scroll-trigger" href="#portfolio">Portfolio</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link js-scroll-trigger" href="#projects">Personal Projects</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link js-scroll-trigger" href="#skills">Skills</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link js-scroll-trigger" href="#awards">Awards</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link js-scroll-trigger" href="#contact">Contact</a>
+        <li>
+          <a target="_blank" rel="noopener noreferrer" aria-label="GitHub" href="https://github.com/omartnc">
+            <svg aria-hidden="true" viewBox="0 0 24 24" width="18" height="18" fill="currentColor"><use href="#icon-github"/></svg>
+          </a>
         </li>
       </ul>
-    </div>
-  </nav>
+    </nav>
+  </header>
 
-  <div class="container-fluid p-0">
+  <main class="site-main">
 
-    <!--====================================================
+    <!-- ============================================
                         ABOUT
-    ======================================================-->
-    <section class="resume-section p-3 p-lg-5 d-flex d-column" id="about">
-      <div class="my-auto">
-        <h1 class="mb-0">Omer
-          <span class="text-primary">Tunc</span>
-        </h1>
-        <div class="subheading mb-5">
-        </div>
-        <p class="mb-5" style="max-width: 500px;">A self-starter, quick learner, and detail-oriented IT professional with more than 8 years of experience as a full-stack software developer. Graduated from the Computer Engineering. Skilled at a wide range of web technologies like HTML, CSS, JAVASCRIPT, React, NodeJS, Express, ASP.NET MVC, OOP (Object Oriented Programming), Design Patterns, Microsoft SQL Server, ADO.NET, Entity Framework, LINQ, AngularJS, T-SQL, .NET CORE, S.O.L.I.D., N-TIRE, MongoDB, SQL, MySQL, Git, and Project Management methodologies Agile Scrum. Creative, reliable, dedicated, innovative, initiative, quick learner, self-starter, and team player.
+    ============================================= -->
+    <section class="section section--hero" id="about" tabindex="-1">
+      <div class="section__inner">
+        <p class="eyebrow">Full-Stack Software Developer</p>
+        <h1 class="hero__name">Omer <span>Tunc</span></h1>
+        <p class="hero__lead">A self-starter, quick learner, and detail-oriented IT professional with more than 8 years of experience as a full-stack software developer. Graduated from the Computer Engineering. Skilled at a wide range of web technologies like HTML, CSS, JAVASCRIPT, React, NodeJS, Express, ASP.NET MVC, OOP (Object Oriented Programming), Design Patterns, Microsoft SQL Server, ADO.NET, Entity Framework, LINQ, AngularJS, T-SQL, .NET CORE, S.O.L.I.D., N-TIRE, MongoDB, SQL, MySQL, Git, and Project Management methodologies Agile Scrum. Creative, reliable, dedicated, innovative, initiative, quick learner, self-starter, and team player.</p>
+        <p class="hero__meta">
+          <svg aria-hidden="true" viewBox="0 0 24 24" width="18" height="18"><use href="#icon-pin"/></svg>
+          Toronto, ON, Canada
         </p>
-        <ul class="list-inline list-social-icons mb-0">
-          <li class="list-inline-item">
-            <a target="blank" href="https://www.linkedin.com/in/omertunc/">
-              <span class="fa-stack fa-lg">
-                <i class="fa fa-circle fa-stack-2x"></i>
-                <i class="fa fa-linkedin fa-stack-1x fa-inverse"></i>
-              </span>
+        <ul class="social">
+          <li>
+            <a target="_blank" rel="noopener noreferrer" aria-label="LinkedIn" href="https://www.linkedin.com/in/omertunc/">
+              <svg aria-hidden="true" viewBox="0 0 24 24" width="18" height="18" fill="currentColor"><use href="#icon-linkedin"/></svg>
             </a>
           </li>
-          <li class="list-inline-item">
-            <a  target="blank" href="https://github.com/omartnc">
-              <span class="fa-stack fa-lg">
-                <i class="fa fa-circle fa-stack-2x"></i>
-                <i class="fa fa-github fa-stack-1x fa-inverse"></i>
-              </span>
+          <li>
+            <a target="_blank" rel="noopener noreferrer" aria-label="GitHub" href="https://github.com/omartnc">
+              <svg aria-hidden="true" viewBox="0 0 24 24" width="18" height="18" fill="currentColor"><use href="#icon-github"/></svg>
             </a>
           </li>
         </ul>
       </div>
     </section>
 
-    <!--====================================================
+    <!-- ============================================
                         EXPERIENCE
-    ======================================================-->
-    <section class="resume-section p-3 p-lg-5 " id="experience">
-      <div class="row my-auto">
-        <div class="col-12">
-          <h2 class="  text-center">Experience</h2>
-          <div class="mb-5 heading-border"></div>
-        </div>
-        <div class="resume-item col-md-6 col-sm-12 ">
-          <div class="card mx-0 p-4 mb-5" style="border-color: #17a2b8; box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.21);">
-            <div class=" resume-content mr-auto">
-              <h4 class="mb-3"><i class="fa fa-globe mr-3 text-info"></i> Senior Software Developer (Silverware POS)</h4>
-              <p>Development and support of all Silverware POS products, ensuring seamless operation for hospitality and food service clients.
-Led enhancements to mobile ordering, real-time analytics, and customizable POS interfaces, improving user experience and operational efficiency.
-Implemented self-serve kiosk and guest mobile ordering solutions, reducing wait times and boosting guest satisfaction.
-Integrated third-party solutions (e.g., OpenTable, Deliverect) to support multi-channel order management and advanced reporting capabilities.
-
-                </p>
-            </div>
-            <div class="resume-date text-md-right">
-              <span class="text-primary">Dec 2021 - Present</span>
-            </div>
-          </div>
-        </div>
-        <div class="resume-item col-md-6 col-sm-12 ">
-          <div class="card mx-0 p-4 mb-5" style="border-color: #17a2b8; box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.21);">
-            <div class=" resume-content mr-auto">
-              <h4 class="mb-3"><i class="fa fa-globe mr-3 text-info"></i> Senior Software Developer (Axibo)</h4>
-              <p>Worked on a web application for a robotic pan and tilt unit.
-                Developed a input validation library to validate all the inputs to the app.
-                Developed custom components to display data from the backend websocket servers.
-                Optimized the web application by reducing the number of clicks to make the app easier to use.
-                </p>
-            </div>
-            <div class="resume-date text-md-right">
-              <span class="text-primary">Jul 2021 - Dec 2021</span>
-            </div>
-          </div>
-        </div>
-        <div class="resume-item col-md-6 col-sm-12">
-          <div class="card mx-0 p-4 mb-5" style="border-color: #ffc107; box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.21);">
-            <div class="resume-content mr-auto">
-              <h4 class="mb-3"><i class="fa fa-laptop mr-3 text-warning"></i> Senior Software Developer  (Monitor CRO) </h4>
-              <p>Participated in developing a research tracking system
-                Developed a research candidate portal that allows patients to create an account, login/logout, edit their profiles, update their health conditions, and check results shared by researchers.
-                Developed a data pipeline for researcher to analyze and understand the factors related to the research results .
-                Proven leadership skills, lead a team of three software developers and performed project management methodologies Agile Scrum.
-                Participated in design meetings with the researchers and adjusted project work according to requirements.
-                Achieved successful outcomes which brought on attention to the system from different countries in Europe. This system is currently being used in Turkey and Saudi Arabia.
-                Developed databases, programs and processes for integration and implementation across enterprise.
-                Trained new developers and programmers as head of three people on company standards for design and review.
-                Monitored ongoing operation of assigned programs and responded to problems by diagnosing and correcting logic and coding errors applying ASP.NET CORE 3.1 - 5, Mysql, Javascript Libraries effectively.
-                Discussed project progress with customers, collected feedback on different stages and directly addressed concerns.</p>
-            </div>
-            <div class="resume-date text-md-right">
-              <span class="text-primary">Aug 2020​- Jul 2021</span>
-            </div>
-          </div>
-        </div>
-        <div class="resume-item col-md-6 col-sm-12">
-          <div class="card mx-0 p-4 mb-5" style="border-color: #28a745; box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.21);">
-            <div class="resume-content mr-auto">
-              <h4 class="mb-3"><i class="fa fa-camera mr-3 text-success"></i> Senior Software Developer  (Apphic Limited)</h4>
-              <p>Gathered and defined customer requirements to develop clear specifications for project plans.
-                Reviewed user requirements, analyzed, designed, implemented, installed and delivered training for new applications.
-                Communicated software architecture strategies to senior leadership and third-party business leaders.
-                Created migration strategies to bridge development gaps between existing software architecture and future updates.
-                Trained new developers and programmers as head of two people on company standards for design and review.
-                Monitored ongoing operation of assigned programs and responded to problems by diagnosing and correcting logic and coding errors applying ASP.NET, ASP.NET CORE 3.1, Mysql, Javascript Libraries, Angularjs, Nodejs, Reactjs, Mongodb, CSS, HTML effectively.
-                </p>
-            </div>
-            <div class="resume-date text-md-right">
-              <span class="text-primary">Jan 2018​- Aug 2020</span>
-            </div>
-          </div>
-        </div>
-        <div class="resume-item col-md-6 col-sm-12">
-          <div class="card mx-0 p-4 mb-5" style="border-color: #2196f3; box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.21);">
-            <div class="resume-content mr-auto">
-              <h4 class="mb-3"><i class="fa fa-area-chart mr-3 text-primary"></i> Software Developer (CRM Medya)</h4>
-              <p>Gathered and defined customer requirements to develop clear specifications for project plans.
-                Reviewed user requirements, analyzed, designed, implemented, installed and delivered training for new applications.
-                Communicated software architecture strategies to senior leadership and third-party business leaders.
-                Created migration strategies to bridge development gaps between existing software architecture and future updates.
-                Trained new developers and programmers as head of two people on company standards for design and review.
-                Monitored ongoing operation of assigned programs and responded to problems by diagnosing and correcting logic and coding errors applying ASP.NET, Javascript Libraries, Angularjs, CSS, HTML effectively.</p>
-            </div>
-            <div class="resume-date text-md-right">
-              <span class="text-primary">Jan 2017 - Oct 2017</span>
-            </div>
-          </div>
-        </div>
+    ============================================= -->
+    <section class="section section--tint" id="experience">
+      <div class="section__inner">
+        <p class="eyebrow">Career</p>
+        <h2 class="section__title">Experience</h2>
+        <div class="section__rule" aria-hidden="true"></div>
+        <ol class="timeline">
+          <li class="timeline__item">
+            <span class="timeline__dot" aria-hidden="true"></span>
+            <span class="timeline__date">Dec 2021 — Present</span>
+            <h3 class="timeline__role">Senior Software Developer</h3>
+            <p class="timeline__org">Silverware POS</p>
+            <p class="timeline__body">Development and support of all Silverware POS products, ensuring seamless operation for hospitality and food service clients. Led enhancements to mobile ordering, real-time analytics, and customizable POS interfaces, and implemented self-serve kiosk and guest mobile ordering solutions. Integrated third-party solutions (OpenTable, Deliverect) to support multi-channel order management and advanced reporting.</p>
+          </li>
+          <li class="timeline__item">
+            <span class="timeline__dot" aria-hidden="true"></span>
+            <span class="timeline__date">Jul 2021 — Dec 2021</span>
+            <h3 class="timeline__role">Senior Software Developer</h3>
+            <p class="timeline__org">Axibo</p>
+            <p class="timeline__body">Worked on a web application for a robotic pan and tilt unit. Developed an input validation library for all app inputs, built custom components to display data from backend websocket servers, and optimized the application by reducing the number of clicks to make it easier to use.</p>
+          </li>
+          <li class="timeline__item">
+            <span class="timeline__dot" aria-hidden="true"></span>
+            <span class="timeline__date">Aug 2020 — Jul 2021</span>
+            <h3 class="timeline__role">Senior Software Developer</h3>
+            <p class="timeline__org">Monitor CRO</p>
+            <p class="timeline__body">Developed a research tracking system and a candidate portal where patients create accounts, update health conditions, and check results shared by researchers. Built a data pipeline for researchers to analyze research factors, led a team of three developers using Agile Scrum, and trained new developers on company standards. The system gained international attention and is currently used in Turkey and Saudi Arabia.</p>
+          </li>
+          <li class="timeline__item">
+            <span class="timeline__dot" aria-hidden="true"></span>
+            <span class="timeline__date">Jan 2018 — Aug 2020</span>
+            <h3 class="timeline__role">Senior Software Developer</h3>
+            <p class="timeline__org">Apphic Limited</p>
+            <p class="timeline__body">Gathered customer requirements, designed and implemented new applications, and delivered training. Communicated software architecture strategies to senior leadership and created migration strategies between existing architecture and future updates. Led a team of two and delivered with ASP.NET, ASP.NET Core, MySQL, AngularJS, Node.js, React and MongoDB.</p>
+          </li>
+          <li class="timeline__item">
+            <span class="timeline__dot" aria-hidden="true"></span>
+            <span class="timeline__date">Jan 2017 — Oct 2017</span>
+            <h3 class="timeline__role">Software Developer</h3>
+            <p class="timeline__org">CRM Medya</p>
+            <p class="timeline__body">Gathered and defined customer requirements, analyzed, designed, implemented and delivered training for new applications with ASP.NET, JavaScript, AngularJS, CSS and HTML.</p>
+          </li>
+        </ol>
       </div>
     </section>
 
-    <!--====================================================
+    <!-- ============================================
                         PORTFOLIO
-    ======================================================-->
-    <section class="resume-section p-3 p-lg-5 d-flex flex-column" id="portfolio">
-      <div class="row my-auto">
-        <div class="col-12">
-          <h2 class="  text-center">Portfolio</h2>
-          <div class="mb-5 heading-border"></div>
-        </div> 
-      </div>
-      <div class="row my-auto">
-        <div class="col-sm-4 portfolio-item filter finance">
-          <a class="portfolio-link" target="blank" href="https://www.apphic.com/en/portfolio-item/retail-and-agency-portal-for-insurance-and-finance-companies/"> <!--data-toggle="modal"-->
-            <div class="caption-port">
-              <div class="caption-port-content">
-                <i class="fa fa-search-plus fa-3x"></i>
-              </div>
-            </div>
-            <img class="img-fluid" src="img/portfolio/bereketAcentePanel.png"style=" height: 320px; width: 400px; "  alt="">
+    ============================================= -->
+    <section class="section" id="portfolio">
+      <div class="section__inner">
+        <p class="eyebrow">Selected Work</p>
+        <h2 class="section__title">Portfolio</h2>
+        <div class="section__rule" aria-hidden="true"></div>
+        <div class="work-grid">
+          <a class="work-card" target="_blank" rel="noopener noreferrer" href="https://www.apphic.com/en/portfolio-item/retail-and-agency-portal-for-insurance-and-finance-companies/">
+            <span class="work-card__media"><img src="img/portfolio/bereketAcentePanel.png" alt="Retail and agency portal for insurance and finance companies" loading="lazy"></span>
+            <span class="work-card__caption">
+              <span class="work-card__title">Retail &amp; Agency Portal</span>
+              <span class="work-card__domain">Insurance &amp; Finance</span>
+            </span>
           </a>
-        </div>
-        <div class="col-sm-4 portfolio-item filter marketing">
-          <a class="portfolio-link" target="blank" href="https://www.apphic.com/en/portfolio-item/bereket-mobil-ios-and-android-mobile-apps/" >
-            <div class="caption-port">
-              <div class="caption-port-content">
-                <i class="fa fa-search-plus fa-3x"></i>
-              </div>
-            </div>
-            <img class="img-fluid" src="img/portfolio/bereketMobil.jpeg"style=" height: 320px; width: 230px;margin-left: 75px; "  alt="">
+          <a class="work-card" target="_blank" rel="noopener noreferrer" href="https://www.apphic.com/en/portfolio-item/bereket-mobil-ios-and-android-mobile-apps/">
+            <span class="work-card__media"><img src="img/portfolio/bereketMobil.jpeg" alt="Bereket Mobil iOS and Android mobile apps" loading="lazy"></span>
+            <span class="work-card__caption">
+              <span class="work-card__title">Bereket Mobil</span>
+              <span class="work-card__domain">iOS &amp; Android Apps</span>
+            </span>
           </a>
-        </div>
-        <div class="col-sm-4 portfolio-item filter consulting">
-          <a class="portfolio-link" target="blank" href="https://www.apphic.com/en/portfolio-item/bereket-com-tr-is-online-bereket-insurance-and-pension-in-one/" >
-            <div class="caption-port">
-              <div class="caption-port-content">
-                <i class="fa fa-search-plus fa-3x"></i>
-              </div>
-            </div>
-            <img class="img-fluid" src="img/portfolio/bereketUserIU.jpeg" style=" height: 320px; width: 400px; " alt="">
+          <a class="work-card" target="_blank" rel="noopener noreferrer" href="https://www.apphic.com/en/portfolio-item/bereket-com-tr-is-online-bereket-insurance-and-pension-in-one/">
+            <span class="work-card__media"><img src="img/portfolio/bereketUserIU.jpeg" alt="Bereket insurance and pension web portal" loading="lazy"></span>
+            <span class="work-card__caption">
+              <span class="work-card__title">Bereket Insurance &amp; Pension</span>
+              <span class="work-card__domain">Web Portal</span>
+            </span>
           </a>
-        </div>
-        <div class="col-sm-4 portfolio-item filter consulting">
-          <a class="portfolio-link" target="blank" href="https://www.apphic.com/en/portfolio-item/event-management-system-ems/" >
-            <div class="caption-port">
-              <div class="caption-port-content">
-                <i class="fa fa-search-plus fa-3x"></i>
-              </div>
-            </div>
-            <img class="img-fluid" src="img/portfolio/eventmanagment.jpeg" style=" height: 320px; width: 400px; " alt="">
+          <a class="work-card" target="_blank" rel="noopener noreferrer" href="https://www.apphic.com/en/portfolio-item/event-management-system-ems/">
+            <span class="work-card__media"><img src="img/portfolio/eventmanagment.jpeg" alt="Event management system" loading="lazy"></span>
+            <span class="work-card__caption">
+              <span class="work-card__title">Event Management System</span>
+              <span class="work-card__domain">Web Application</span>
+            </span>
           </a>
-        </div>
-        <div class="col-sm-4 portfolio-item filter consulting">
-          <a class="portfolio-link" target="blank" href="https://www.apphic.com/en/portfolio-item/genc-gonulluler-gov-tr-official-volunteer-platform-of-turkey/" >
-            <div class="caption-port">
-              <div class="caption-port-content">
-                <i class="fa fa-search-plus fa-3x"></i>
-              </div>
-            </div>
-            <img class="img-fluid" src="img/portfolio/gencgonullulerweb.jpeg"style=" height: 320px; width: 400px; "  alt="">
+          <a class="work-card" target="_blank" rel="noopener noreferrer" href="https://www.apphic.com/en/portfolio-item/genc-gonulluler-gov-tr-official-volunteer-platform-of-turkey/">
+            <span class="work-card__media"><img src="img/portfolio/gencgonullulerweb.jpeg" alt="Genc Gonulluler volunteer platform" loading="lazy"></span>
+            <span class="work-card__caption">
+              <span class="work-card__title">Genc Gonulluler</span>
+              <span class="work-card__domain">Volunteer Platform</span>
+            </span>
           </a>
-        </div>
-        <div class="col-sm-4 portfolio-item filter finance">
-          <a class="portfolio-link" target="blank" href="https://www.apphic.com/en/portfolio-item/havelsan-interactive-magazine-mobile-app/" >
-            <div class="caption-port">
-              <div class="caption-port-content">
-                <i class="fa fa-search-plus fa-3x"></i>
-              </div>
-            </div>
-            <img class="img-fluid" src="img/portfolio/havelsan.jpg" style=" height: 320px; width: 200px;margin-left: 85px; " alt="">
+          <a class="work-card" target="_blank" rel="noopener noreferrer" href="https://www.apphic.com/en/portfolio-item/havelsan-interactive-magazine-mobile-app/">
+            <span class="work-card__media"><img src="img/portfolio/havelsan.jpg" alt="Havelsan interactive magazine mobile app" loading="lazy"></span>
+            <span class="work-card__caption">
+              <span class="work-card__title">Havelsan Magazine</span>
+              <span class="work-card__domain">Mobile App</span>
+            </span>
           </a>
-        </div>
-        <div class="col-sm-4 portfolio-item filter marketing">
-          <a class="portfolio-link" target="blank" href="https://www.apphic.com/en/portfolio-item/insaat-hesabi-construction-cost-calculation-platform/" >
-            <div class="caption-port">
-              <div class="caption-port-content">
-                <i class="fa fa-search-plus fa-3x"></i>
-              </div>
-            </div>
-            <img class="img-fluid" src="img/portfolio/insaathesabi.jpeg" style=" height: 320px; width: 400px; " alt="">
+          <a class="work-card" target="_blank" rel="noopener noreferrer" href="https://www.apphic.com/en/portfolio-item/insaat-hesabi-construction-cost-calculation-platform/">
+            <span class="work-card__media"><img src="img/portfolio/insaathesabi.jpeg" alt="Insaat Hesabi construction cost platform" loading="lazy"></span>
+            <span class="work-card__caption">
+              <span class="work-card__title">Insaat Hesabi</span>
+              <span class="work-card__domain">Construction Cost Platform</span>
+            </span>
           </a>
-        </div>
-        <div class="col-sm-4 portfolio-item filter marketing">
-          <a class="portfolio-link" target="blank" href="https://www.apphic.com/en/portfolio-item/agricultural-credit-cooperatives-intranet-systems/" >
-            <div class="caption-port">
-              <div class="caption-port-content">
-                <i class="fa fa-search-plus fa-3x"></i>
-              </div>
-            </div>
-            <img class="img-fluid" src="img/portfolio/intranet.jpeg" style=" height: 320px; width: 400px; " alt="">
+          <a class="work-card" target="_blank" rel="noopener noreferrer" href="https://www.apphic.com/en/portfolio-item/agricultural-credit-cooperatives-intranet-systems/">
+            <span class="work-card__media"><img src="img/portfolio/intranet.jpeg" alt="Agricultural credit cooperatives intranet systems" loading="lazy"></span>
+            <span class="work-card__caption">
+              <span class="work-card__title">Agricultural Credit Intranet</span>
+              <span class="work-card__domain">Intranet Systems</span>
+            </span>
           </a>
-        </div>
-        <div class="col-sm-4 portfolio-item filter finance">
-          <a class="portfolio-link" target="blank" href="https://www.apphic.com/en/portfolio-item/prime-ministry-ytb-new-generation-intranet-system-36-modules-and-integration/" >
-            <div class="caption-port">
-              <div class="caption-port-content">
-                <i class="fa fa-search-plus fa-3x"></i>
-              </div>
-            </div>
-            <img class="img-fluid" src="img/portfolio/ytb.jpeg" style=" height: 320px; width: 400px; " alt="">
+          <a class="work-card" target="_blank" rel="noopener noreferrer" href="https://www.apphic.com/en/portfolio-item/prime-ministry-ytb-new-generation-intranet-system-36-modules-and-integration/">
+            <span class="work-card__media"><img src="img/portfolio/ytb.jpeg" alt="Prime Ministry YTB intranet system" loading="lazy"></span>
+            <span class="work-card__caption">
+              <span class="work-card__title">Prime Ministry YTB Intranet</span>
+              <span class="work-card__domain">36 Modules &amp; Integrations</span>
+            </span>
           </a>
         </div>
       </div>
     </section>
 
-    <!--====================================================
-                        PERSONAL PROJECTS
-    ======================================================-->
-    <section class="resume-section p-3 p-lg-5 d-flex flex-column" id="projects">
-      <div class="row my-auto">
-        <div class="col-12">
-          <h2 class="text-center">Personal Projects</h2>
-          <div class="mb-5 heading-border"></div>
-        </div>
-      </div>
-      <div class="row my-auto">
-        <div class="col-sm-4 portfolio-item">
-          <a class="portfolio-link" data-toggle="modal" href="#projectModal1">
-            <div class="caption-port">
-              <div class="caption-port-content">
-                <i class="fa fa-search-plus fa-3x"></i>
-              </div>
-            </div>
-            <img class="img-fluid" src="img/projects/dogutech/screencapture-dogutech-xyz-2026-01-31-10_41_36.png" style="height: 320px; width: 400px; object-fit: cover;" alt="Dogutech">
-          </a>
-          <h5 class="text-center mt-3">Dogutech</h5>
-        </div>
-        <div class="col-sm-4 portfolio-item">
-          <a class="portfolio-link" data-toggle="modal" href="#projectModal2">
-            <div class="caption-port">
-              <div class="caption-port-content">
-                <i class="fa fa-search-plus fa-3x"></i>
-              </div>
-            </div>
-            <img class="img-fluid" src="img/projects/reportAiChat/Report_AI_Chat.png" style="height: 320px; width: 400px; object-fit: cover;" alt="Report AI Chat">
-          </a>
-          <h5 class="text-center mt-3">Report AI Chat</h5>
-        </div>
-        <div class="col-sm-4 portfolio-item">
-          <a class="portfolio-link" data-toggle="modal" href="#projectModal3">
-            <div class="caption-port">
-              <div class="caption-port-content">
-                <i class="fa fa-search-plus fa-3x"></i>
-              </div>
-            </div>
-            <img class="img-fluid" src="img/projects/videoAI/VideoAI_1.png" style="height: 320px; width: 400px; object-fit: cover;" alt="Video AI">
-          </a>
-          <h5 class="text-center mt-3">Video AI</h5>
+    <!-- ============================================
+                      PERSONAL PROJECTS
+    ============================================= -->
+    <section class="section section--tint" id="projects">
+      <div class="section__inner">
+        <p class="eyebrow">Side Projects</p>
+        <h2 class="section__title">Personal Projects</h2>
+        <div class="section__rule" aria-hidden="true"></div>
+        <div class="work-grid work-grid--projects">
+          <button class="work-card" type="button" data-dialog="#projectModal1">
+            <span class="work-card__media"><img src="img/projects/dogutech/screencapture-dogutech-xyz-2026-01-31-10_41_36.png" alt="Dogutech business management system" loading="lazy"></span>
+            <span class="work-card__caption">
+              <span class="work-card__title">Dogutech</span>
+              <span class="work-card__domain">Business management — products, expenses, payments and accounting.</span>
+            </span>
+          </button>
+          <button class="work-card" type="button" data-dialog="#projectModal2">
+            <span class="work-card__media"><img src="img/projects/reportAiChat/Report_AI_Chat.png" alt="Report AI Chat interface" loading="lazy"></span>
+            <span class="work-card__caption">
+              <span class="work-card__title">Report AI Chat</span>
+              <span class="work-card__domain">Ask questions in plain language and get SQL queries and visualizations.</span>
+            </span>
+          </button>
+          <button class="work-card" type="button" data-dialog="#projectModal3">
+            <span class="work-card__media"><img src="img/projects/videoAI/VideoAI_1.png" alt="Video AI platform" loading="lazy"></span>
+            <span class="work-card__caption">
+              <span class="work-card__title">Video AI</span>
+              <span class="work-card__domain">AI-powered video analysis, scene detection and enhancement.</span>
+            </span>
+          </button>
         </div>
       </div>
     </section>
 
-    <!--====================================================
-                        SKILLS
-    ======================================================-->
-    <section class=" d-flex flex-column" id="skills">
-      <div class="p-lg-5 p-3 skill-cover">
-        <h3 class="text-center text-white">Coding Skills</h3>
-        <div class="row text-center my-auto ">
-          <div class="col-md-12 col-sm-12">
-            <div class="skill-item"> 
-              <p>C#, ASP.NET MVC, ASP.NET CORE, JavaScript, Mongodb, SQL, ADO.NET, HTML5, CSS3, Bootstrap, JQuery, Node JS, React.js, Nodejs, Angularjs, Web Services, OOP (Object Oriented Programming), Design Patterns, Scrum, Object Oriented Design, Entity Framework, LINQ, T-SQL, S.O.L.I.D., N-Tire</p>
-            </div>
-          </div> 
+    <!-- ============================================
+                          SKILLS
+    ============================================= -->
+    <section class="section section--blue" id="skills">
+      <div class="section__inner">
+        <p class="eyebrow eyebrow--light">Toolbox</p>
+        <h2 class="section__title section__title--light">Skills</h2>
+        <div class="section__rule section__rule--light" aria-hidden="true"></div>
+        <ul class="skills">
+          <li class="skills__group">
+            <h3 class="skills__label">Backend &amp; Languages</h3>
+            <ul class="skills__chips">
+              <li>C#</li><li>ASP.NET MVC</li><li>ASP.NET Core</li><li>Node.js</li><li>JavaScript</li>
+            </ul>
+          </li>
+          <li class="skills__group">
+            <h3 class="skills__label">Data</h3>
+            <ul class="skills__chips">
+              <li>SQL</li><li>T-SQL</li><li>Entity Framework</li><li>ADO.NET</li><li>LINQ</li><li>MongoDB</li>
+            </ul>
+          </li>
+          <li class="skills__group">
+            <h3 class="skills__label">Frontend</h3>
+            <ul class="skills__chips">
+              <li>React</li><li>AngularJS</li><li>HTML5</li><li>CSS3</li><li>Bootstrap</li><li>jQuery</li>
+            </ul>
+          </li>
+          <li class="skills__group">
+            <h3 class="skills__label">Practices</h3>
+            <ul class="skills__chips">
+              <li>OOP</li><li>Object-Oriented Design</li><li>Design Patterns</li><li>S.O.L.I.D.</li><li>N-Tier</li><li>Scrum</li><li>Web Services</li>
+            </ul>
+          </li>
+        </ul>
+      </div>
+    </section>
+
+    <!-- ============================================
+                        EDUCATION
+    ============================================= -->
+    <section class="section" id="education">
+      <div class="section__inner">
+        <p class="eyebrow">Education &amp; Training</p>
+        <h2 class="section__title">Education</h2>
+        <div class="section__rule" aria-hidden="true"></div>
+        <div class="awards-grid">
+          <article class="award-card">
+            <span class="award-card__date">Jul 2016 — Dec 2016</span>
+            <h3 class="award-card__title">Microsoft Software and Database Specialization</h3>
+            <p class="award-card__desc">800-hour Microsoft Software and Database Specialization course approved by Germany.</p>
+          </article>
+          <article class="award-card">
+            <span class="award-card__date">Sept 2010 — Apr 2015</span>
+            <h3 class="award-card__title">Computer Engineering, Azerbaijan Technical University, Baku</h3>
+            <p class="award-card__desc">Major — B.Sc. Computer Engineering. Courses: Object Oriented Programming and Data Structures, Operating System Fundamentals, Analysis of Algorithms, Database Management Systems, Building E-Commerce Systems, and more.</p>
+          </article>
         </div>
       </div>
     </section>
 
-    <!--====================================================
-                           AWARDS
-    ======================================================-->
-    <section class="resume-section p-3 p-lg-5 d-flex flex-column" id="awards">
-      <div class="row my-auto">
-        <div class="col-12">
-          <h2 class="  text-center">Awards</h2>
-          <div class="mb-5 heading-border"></div>
-        </div>
-        <div class="main-award" id="award-box">
-          <div class="award">
-            <div class="award-icon"></div>
-            <div class="award-content">
-              <span class="date">Jul 2016 - Dec 2016</span>
-              <h5 class="title">Microsoft Software And Database Specialization</h5>
-              <p class="description">
-                800-hour Microsoft Software And Database Specialization course approved by Germany. 
-              </p>
-            </div>
-          </div>
-          <div class="award">
-            <div class="award-icon"></div>
-            <div class="award-content">
-              <span class="date">Sept. 2010​- Apr. 2015</span>
-              <h5 class="title">Computer Engineering, Azerbaijan Technical University, Baku, Azerbaijan</h5>
-              <p class="description">
-                Major – B.Sc. Computer engineering. Courses: Object Oriented Programming and Data Structures, Operating System Fundamentals, Analysis of Algorithms, Database Management Systems, Building E-Commerce Systems, etc.
-              </p>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <!--====================================================
+    <!-- ============================================
                           CONTACT
-    ======================================================-->
-    <section class="resume-section p-3 p-lg-5 d-flex flex-column">
-      <div class="row my-auto" id="contact"> 
-        <div class="col-md-4 col-sm-12">
-          <div class="contact-cont2">
-            <div class="contact-add contact-box-desc">
-              <h3><i class="fa fa-map-marker cl-atlantis fa-2x"></i> Address</h3>
-              <p>Toronto<br>
-                ON, Canada <br></p>
-            </div> 
+    ============================================= -->
+    <section class="section section--tint" id="contact">
+      <div class="section__inner">
+        <p class="eyebrow">Get in Touch</p>
+        <h2 class="section__title">Contact</h2>
+        <div class="section__rule" aria-hidden="true"></div>
+        <div class="contact-grid">
+          <div class="contact-card">
+            <span class="contact-card__icon" aria-hidden="true">
+              <svg viewBox="0 0 24 24" width="20" height="20"><use href="#icon-pin"/></svg>
+            </span>
+            <div>
+              <h3 class="contact-card__title">Address</h3>
+              <p>Toronto, ON, Canada</p>
+            </div>
           </div>
-        </div>
-        <div class="col-md-4 col-sm-12 "> 
-        </div><div class="col-md-4 col-sm-12">
-          <div class="contact-cont2"> 
-            <div class="contact-add contact-box-desc">
-              <h3><i class="fa fa-envelope-o cl-atlantis fa-2x"></i> Email</h3>
-              <address class="address-details-f">
-                 
-                Email: <a href="mailto:om3r.tunc@gmail.com" class="">om3r.tunc@gmail.com</a>
-              </address>
-               
+          <div class="contact-card">
+            <span class="contact-card__icon" aria-hidden="true">
+              <svg viewBox="0 0 24 24" width="20" height="20"><rect x="3" y="5" width="18" height="14" rx="2" fill="none" stroke="currentColor" stroke-width="2"/><path d="M3 7l9 6 9-6" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+            </span>
+            <div>
+              <h3 class="contact-card__title">Email</h3>
+              <p><a href="mailto:om3r.tunc@gmail.com">om3r.tunc@gmail.com</a></p>
             </div>
           </div>
         </div>
       </div>
     </section>
- 
 
-
-  </div>
-
-  <!--====================================================
-                    PORTFOLIO MODALS
-======================================================-->
-  <div class="portfolio-modal modal fade" id="portfolioModal1" tabindex="-1" role="dialog" aria-hidden="true">
-    <div class="modal-dialog" role="document">
-      <div class="modal-content">
-        <div class="close-modal" data-dismiss="modal">
-          <div class="lr">
-            <div class="rl"></div>
-          </div>
-        </div>
-        <div class="container">
-          <div class="row">
-            <div class="modal-body">
-              <div class="title-bar">
-                <div class="col-md-12">
-                  <h2 class="text-center">Our Project</h2>
-                  <div class="heading-border"></div>
-                </div>
-              </div>
-              <div class="row">
-                <div class="col-md-6">
-                  <img class="img-fluid img-centered" src="img/portfolio/p-1.jpg" alt="">
-                </div>
-                <div class="col-md-6">
-                  <p>Our new Project every processes had become fragmented; meaning quality and service were
-                    inconsistent. This lack of standardization was adversely impacting operating costs, productivity and
-                    customer satisfaction. For several years now Payfast has worked strategically with innovations as a
-                    means of developing new solutions, products and services. In line with this vision, Success was
-                    approached to find new payments solutions to offer Payfast customers on their website, including
-                    open invoice and partial payments options.</p>
-                  <ul class="list-inline item-details">
-                    <li>Client:
-                      <strong>
-                        <a href="#">Techs Soft</a>
-                      </strong>
-                    </li>
-                    <li>Date:
-                      <strong>
-                        <a href="#">April 2018</a>
-                      </strong>
-                    </li>
-                    <li>Service:
-                      <strong>
-                        <a href="#">Web Development</a>
-                      </strong>
-                    </li>
-                  </ul>
-                  <button class="btn btn-general btn-white" type="button" data-dismiss="modal">
-                    <i class="fa fa-times"></i> Close
-                  </button>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
+    <footer class="site-footer">
+      <p>© <span id="year">2026</span> Omer Tunc · Built in Toronto</p>
+    </footer>
+  </main>
 
   <!--====================================================
                     PERSONAL PROJECT MODALS
   ======================================================-->
-  <!-- Dogutech Project Modal -->
-  <div class="portfolio-modal modal fade" id="projectModal1" tabindex="-1" role="dialog" aria-hidden="true">
-    <div class="modal-dialog modal-lg" role="document">
-      <div class="modal-content">
-        <div class="close-modal" data-dismiss="modal">
-          <div class="lr">
-            <div class="rl"></div>
-          </div>
-        </div>
-        <div class="container">
-          <div class="row">
-            <div class="modal-body">
-              <div class="title-bar">
-                <div class="col-md-12">
-                  <h2 class="text-center">Dogutech</h2>
-                  <div class="heading-border"></div>
-                </div>
-              </div>
-              <div class="row">
-                <div class="col-md-12">
-                  <p class="mb-4">A comprehensive business management system featuring product management, expense tracking, payment processing, and accounting integrations. Built with modern web technologies to streamline business operations and financial management.</p>
-                  
-                  <div class="mb-4">
-                    <h5>Key Features:</h5>
-                    <ul>
-                      <li>Product and inventory management</li>
-                      <li>Expense tracking and categorization</li>
-                      <li>Payment processing with accounting integration</li>
-                      <li>General ledger and account management</li>
-                      <li>Financial reporting and analytics</li>
-                    </ul>
-                  </div>
-
-                  <div class="row mb-3">
-                    <div class="col-md-6 mb-3">
-                      <img class="img-fluid" src="img/projects/dogutech/screencapture-dogutech-xyz-2026-01-31-10_41_36.png" alt="Dogutech Dashboard">
-                      <p class="text-center mt-2"><small>Dashboard Overview</small></p>
-                    </div>
-                    <div class="col-md-6 mb-3">
-                      <img class="img-fluid" src="img/projects/dogutech/screencapture-dogutech-xyz-urun-liste-2026-01-31-10_43_43.png" alt="Product List">
-                      <p class="text-center mt-2"><small>Product Management</small></p>
-                    </div>
-                  </div>
-
-                  <div class="row mb-3">
-                    <div class="col-md-6 mb-3">
-                      <img class="img-fluid" src="img/projects/dogutech/screencapture-dogutech-xyz-gider-liste-2026-01-31-10_44_06.png" alt="Expense List">
-                      <p class="text-center mt-2"><small>Expense Tracking</small></p>
-                    </div>
-                    <div class="col-md-6 mb-3">
-                      <img class="img-fluid" src="img/projects/dogutech/screencapture-dogutech-xyz-odeme-muhasebe-hesap-2026-01-31-10_42_59.png" alt="Payment Accounting">
-                      <p class="text-center mt-2"><small>Payment Accounting</small></p>
-                    </div>
-                  </div>
-
-                  <div class="row mb-3">
-                    <div class="col-md-6 mb-3">
-                      <img class="img-fluid" src="img/projects/dogutech/screencapture-dogutech-xyz-odeme-genel-muhasebe-hesap-2026-01-31-10_43_17.png" alt="General Accounting">
-                      <p class="text-center mt-2"><small>General Accounting</small></p>
-                    </div>
-                  </div>
-
-                  <button class="btn btn-general btn-white" type="button" data-dismiss="modal">
-                    <i class="fa fa-times"></i> Close
-                  </button>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
+  <dialog class="project-dialog" id="projectModal1" aria-labelledby="projectModal1Title">
+    <div class="project-dialog__panel">
+      <button class="project-dialog__close" type="button" data-close aria-label="Close">
+        <svg aria-hidden="true" viewBox="0 0 24 24" width="20" height="20"><use href="#icon-close"/></svg>
+      </button>
+      <h2 class="project-dialog__title" id="projectModal1Title">Dogutech</h2>
+      <p class="project-dialog__desc">A comprehensive business management system featuring product management, expense tracking, payment processing, and accounting integrations.</p>
+      <h3 class="project-dialog__sub">Key Features</h3>
+      <ul class="project-dialog__list">
+        <li>Product and inventory management</li>
+        <li>Expense tracking and categorization</li>
+        <li>Payment processing with accounting integration</li>
+        <li>General ledger and account management</li>
+        <li>Financial reporting and analytics</li>
+      </ul>
+      <div class="project-dialog__gallery">
+        <figure><img src="img/projects/dogutech/screencapture-dogutech-xyz-2026-01-31-10_41_36.png" alt="Dogutech dashboard" loading="lazy"><figcaption>Dashboard Overview</figcaption></figure>
+        <figure><img src="img/projects/dogutech/screencapture-dogutech-xyz-urun-liste-2026-01-31-10_43_43.png" alt="Dogutech product list" loading="lazy"><figcaption>Product Management</figcaption></figure>
+        <figure><img src="img/projects/dogutech/screencapture-dogutech-xyz-gider-liste-2026-01-31-10_44_06.png" alt="Dogutech expense list" loading="lazy"><figcaption>Expense Tracking</figcaption></figure>
+        <figure><img src="img/projects/dogutech/screencapture-dogutech-xyz-odeme-muhasebe-hesap-2026-01-31-10_42_59.png" alt="Dogutech payment accounting" loading="lazy"><figcaption>Payment Accounting</figcaption></figure>
+        <figure><img src="img/projects/dogutech/screencapture-dogutech-xyz-odeme-genel-muhasebe-hesap-2026-01-31-10_43_17.png" alt="Dogutech general accounting" loading="lazy"><figcaption>General Accounting</figcaption></figure>
       </div>
     </div>
-  </div>
+  </dialog>
 
-  <!-- Report AI Chat Project Modal -->
-  <div class="portfolio-modal modal fade" id="projectModal2" tabindex="-1" role="dialog" aria-hidden="true">
-    <div class="modal-dialog modal-lg" role="document">
-      <div class="modal-content">
-        <div class="close-modal" data-dismiss="modal">
-          <div class="lr">
-            <div class="rl"></div>
-          </div>
-        </div>
-        <div class="container">
-          <div class="row">
-            <div class="modal-body">
-              <div class="title-bar">
-                <div class="col-md-12">
-                  <h2 class="text-center">Report AI Chat</h2>
-                  <div class="heading-border"></div>
-                </div>
-              </div>
-              <div class="row">
-                <div class="col-md-12">
-                  <p class="mb-4">An intelligent AI-powered chat interface for database querying and reporting. Users can ask questions in natural language and receive SQL queries and data visualizations in response. This tool democratizes data access by eliminating the need for SQL knowledge.</p>
-                  
-                  <div class="mb-4">
-                    <h5>Key Features:</h5>
-                    <ul>
-                      <li>Natural language to SQL query conversion</li>
-                      <li>Real-time database interaction</li>
-                      <li>Automated data visualization</li>
-                      <li>Interactive chat interface</li>
-                      <li>Support for complex queries and joins</li>
-                    </ul>
-                  </div>
-
-                  <div class="row mb-3">
-                    <div class="col-md-12 mb-3">
-                      <img class="img-fluid" src="img/projects/reportAiChat/Report_AI_Chat.png" alt="Report AI Chat Interface">
-                      <p class="text-center mt-2"><small>AI Chat Interface</small></p>
-                    </div>
-                  </div>
-
-                  <div class="row mb-3">
-                    <div class="col-md-12 mb-3">
-                      <img class="img-fluid" src="img/projects/reportAiChat/AI_SQL_DEMO.gif" alt="AI SQL Demo">
-                      <p class="text-center mt-2"><small>Live Demo: Natural Language to SQL</small></p>
-                    </div>
-                  </div>
-
-                  <button class="btn btn-general btn-white" type="button" data-dismiss="modal">
-                    <i class="fa fa-times"></i> Close
-                  </button>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
+  <dialog class="project-dialog" id="projectModal2" aria-labelledby="projectModal2Title">
+    <div class="project-dialog__panel">
+      <button class="project-dialog__close" type="button" data-close aria-label="Close">
+        <svg aria-hidden="true" viewBox="0 0 24 24" width="20" height="20"><use href="#icon-close"/></svg>
+      </button>
+      <h2 class="project-dialog__title" id="projectModal2Title">Report AI Chat</h2>
+      <p class="project-dialog__desc">An AI-powered chat interface for database querying and reporting. Ask questions in natural language and receive SQL queries and data visualizations in response.</p>
+      <h3 class="project-dialog__sub">Key Features</h3>
+      <ul class="project-dialog__list">
+        <li>Natural language to SQL query conversion</li>
+        <li>Real-time database interaction</li>
+        <li>Automated data visualization</li>
+        <li>Interactive chat interface</li>
+        <li>Support for complex queries and joins</li>
+      </ul>
+      <div class="project-dialog__gallery">
+        <figure><img src="img/projects/reportAiChat/Report_AI_Chat.png" alt="Report AI Chat interface" loading="lazy"><figcaption>AI Chat Interface</figcaption></figure>
+        <figure><img src="img/projects/reportAiChat/AI_SQL_DEMO.gif" alt="Report AI Chat SQL demo" loading="lazy"><figcaption>Live Demo: Natural Language to SQL</figcaption></figure>
       </div>
     </div>
-  </div>
+  </dialog>
 
-  <!-- Video AI Project Modal -->
-  <div class="portfolio-modal modal fade" id="projectModal3" tabindex="-1" role="dialog" aria-hidden="true">
-    <div class="modal-dialog modal-lg" role="document">
-      <div class="modal-content">
-        <div class="close-modal" data-dismiss="modal">
-          <div class="lr">
-            <div class="rl"></div>
-          </div>
-        </div>
-        <div class="container">
-          <div class="row">
-            <div class="modal-body">
-              <div class="title-bar">
-                <div class="col-md-12">
-                  <h2 class="text-center">Video AI</h2>
-                  <div class="heading-border"></div>
-                </div>
-              </div>
-              <div class="row">
-                <div class="col-md-12">
-                  <p class="mb-4">An advanced AI-powered video processing and analysis platform. This application leverages machine learning to provide intelligent video editing, content analysis, scene detection, and automated video enhancement capabilities.</p>
-                  
-                  <div class="mb-4">
-                    <h5>Key Features:</h5>
-                    <ul>
-                      <li>AI-powered video analysis and processing</li>
-                      <li>Automated scene detection and segmentation</li>
-                      <li>Content-aware video editing</li>
-                      <li>Real-time video enhancement</li>
-                      <li>Intelligent object and face recognition</li>
-                      <li>Automated transcription and captioning</li>
-                    </ul>
-                  </div>
-
-                  <div class="row mb-3">
-                    <div class="col-md-6 mb-3">
-                      <img class="img-fluid" src="img/projects/videoAI/VideoAI_1.png" alt="Video AI Interface">
-                      <p class="text-center mt-2"><small>Main Interface</small></p>
-                    </div>
-                    <div class="col-md-6 mb-3">
-                      <img class="img-fluid" src="img/projects/videoAI/VideoAI_2.png" alt="Video Processing">
-                      <p class="text-center mt-2"><small>Video Processing</small></p>
-                    </div>
-                  </div>
-
-                  <div class="row mb-3">
-                    <div class="col-md-6 mb-3">
-                      <img class="img-fluid" src="img/projects/videoAI/VideoAI_3.png" alt="Analysis Dashboard">
-                      <p class="text-center mt-2"><small>Analysis Dashboard</small></p>
-                    </div>
-                    <div class="col-md-6 mb-3">
-                      <img class="img-fluid" src="img/projects/videoAI/VideoAI_5.png" alt="Feature Overview">
-                      <p class="text-center mt-2"><small>Feature Overview</small></p>
-                    </div>
-                  </div>
-
-                  <div class="row mb-3">
-                    <div class="col-md-6 mb-3">
-                      <img class="img-fluid" src="img/projects/videoAI/VideoAI_6.png" alt="Video Timeline">
-                      <p class="text-center mt-2"><small>Video Timeline Editor</small></p>
-                    </div>
-                    <div class="col-md-6 mb-3">
-                      <img class="img-fluid" src="img/projects/videoAI/VideoAI_7.png" alt="AI Tools">
-                      <p class="text-center mt-2"><small>AI Tools Panel</small></p>
-                    </div>
-                  </div>
-
-                  <div class="row mb-3">
-                    <div class="col-md-6 mb-3">
-                      <img class="img-fluid" src="img/projects/videoAI/VideoAI_8.png" alt="Scene Detection">
-                      <p class="text-center mt-2"><small>Scene Detection</small></p>
-                    </div>
-                    <div class="col-md-6 mb-3">
-                      <img class="img-fluid" src="img/projects/videoAI/VideoAI_9.png" alt="Enhancement Options">
-                      <p class="text-center mt-2"><small>Enhancement Options</small></p>
-                    </div>
-                  </div>
-
-                  <div class="row mb-3">
-                    <div class="col-md-6 mb-3">
-                      <img class="img-fluid" src="img/projects/videoAI/VideoAI_10.png" alt="Export Settings">
-                      <p class="text-center mt-2"><small>Export Settings</small></p>
-                    </div>
-                    <div class="col-md-6 mb-3">
-                      <img class="img-fluid" src="img/projects/videoAI/VideoAI_11.png" alt="Results View">
-                      <p class="text-center mt-2"><small>Results View</small></p>
-                    </div>
-                  </div>
-
-                  <div class="row mb-3">
-                    <div class="col-md-6 mb-3">
-                      <img class="img-fluid" src="img/projects/videoAI/VideoAI_12.png" alt="Advanced Features">
-                      <p class="text-center mt-2"><small>Advanced Features</small></p>
-                    </div>
-                    <div class="col-md-6 mb-3">
-                      <img class="img-fluid" src="img/projects/videoAI/VideoAI_13.png" alt="Settings Panel">
-                      <p class="text-center mt-2"><small>Settings Panel</small></p>
-                    </div>
-                  </div>
-
-                  <div class="row mb-3">
-                    <div class="col-md-6 mb-3">
-                      <img class="img-fluid" src="img/projects/videoAI/VideoAI_14.png" alt="Final Output">
-                      <p class="text-center mt-2"><small>Final Output</small></p>
-                    </div>
-                  </div>
-
-                  <div class="mb-4">
-                    <h5>Watch Demo Videos:</h5>
-                    <p>
-                      <a href="https://www.youtube.com/@ViraScope0/shorts" target="_blank" class="btn btn-primary">
-                        <i class="fa fa-youtube-play"></i> Visit YouTube Channel
-                      </a>
-                    </p>
-                  </div>
-
-                  <button class="btn btn-general btn-white" type="button" data-dismiss="modal">
-                    <i class="fa fa-times"></i> Close
-                  </button>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
+  <dialog class="project-dialog" id="projectModal3" aria-labelledby="projectModal3Title">
+    <div class="project-dialog__panel">
+      <button class="project-dialog__close" type="button" data-close aria-label="Close">
+        <svg aria-hidden="true" viewBox="0 0 24 24" width="20" height="20"><use href="#icon-close"/></svg>
+      </button>
+      <h2 class="project-dialog__title" id="projectModal3Title">Video AI</h2>
+      <p class="project-dialog__desc">An advanced AI-powered video processing and analysis platform leveraging machine learning for intelligent editing, content analysis, scene detection, and automated enhancement.</p>
+      <h3 class="project-dialog__sub">Key Features</h3>
+      <ul class="project-dialog__list">
+        <li>AI-powered video analysis and processing</li>
+        <li>Automated scene detection and segmentation</li>
+        <li>Content-aware video editing</li>
+        <li>Real-time video enhancement</li>
+        <li>Intelligent object and face recognition</li>
+        <li>Automated transcription and captioning</li>
+      </ul>
+      <div class="project-dialog__gallery">
+        <figure><img src="img/projects/videoAI/VideoAI_2.png" alt="Video AI processing" loading="lazy"><figcaption>Video Processing</figcaption></figure>
+        <figure><img src="img/projects/videoAI/VideoAI_3.png" alt="Video AI analysis dashboard" loading="lazy"><figcaption>Analysis Dashboard</figcaption></figure>
+        <figure><img src="img/projects/videoAI/VideoAI_5.png" alt="Video AI feature overview" loading="lazy"><figcaption>Feature Overview</figcaption></figure>
+        <figure><img src="img/projects/videoAI/VideoAI_6.png" alt="Video AI timeline editor" loading="lazy"><figcaption>Video Timeline Editor</figcaption></figure>
+        <figure><img src="img/projects/videoAI/VideoAI_7.png" alt="Video AI tools panel" loading="lazy"><figcaption>AI Tools Panel</figcaption></figure>
+        <figure><img src="img/projects/videoAI/VideoAI_8.png" alt="Video AI scene detection" loading="lazy"><figcaption>Scene Detection</figcaption></figure>
+        <figure><img src="img/projects/videoAI/VideoAI_9.png" alt="Video AI enhancement options" loading="lazy"><figcaption>Enhancement Options</figcaption></figure>
+        <figure><img src="img/projects/videoAI/VideoAI_10.png" alt="Video AI export settings" loading="lazy"><figcaption>Export Settings</figcaption></figure>
+        <figure><img src="img/projects/videoAI/VideoAI_11.png" alt="Video AI results view" loading="lazy"><figcaption>Results View</figcaption></figure>
+        <figure><img src="img/projects/videoAI/VideoAI_12.png" alt="Video AI advanced features" loading="lazy"><figcaption>Advanced Features</figcaption></figure>
+        <figure><img src="img/projects/videoAI/VideoAI_13.png" alt="Video AI settings panel" loading="lazy"><figcaption>Settings Panel</figcaption></figure>
+        <figure><img src="img/projects/videoAI/VideoAI_14.png" alt="Video AI final output" loading="lazy"><figcaption>Final Output</figcaption></figure>
       </div>
+      <p class="project-dialog__cta">
+        <a class="btn" target="_blank" rel="noopener noreferrer" href="https://www.youtube.com/@ViraScope0/shorts">Watch Demos on YouTube</a>
+      </p>
     </div>
-  </div>
+  </dialog>
   
 
 
-  <!-- Global javascript -->
-  <script src="js/jquery/jquery.min.js"></script>
-  <script src="js/bootstrap/bootstrap.bundle.min.js"></script>
-  <script src="js/jquery-easing/jquery.easing.min.js"></script>
-  <script src="js/counter/jquery.waypoints.min.js"></script>
-  <script src="js/counter/jquery.counterup.min.js"></script>
-  <script src="js/custom.js"></script>
-  <script>
-    $(document).ready(function () {
-
-      $(".filter-b").click(function () {
-        var value = $(this).attr('data-filter');
-        if (value == "all") {
-          $('.filter').show('1000');
-        }
-        else {
-          $(".filter").not('.' + value).hide('3000');
-          $('.filter').filter('.' + value).show('3000');
-        }
-      });
-
-      if ($(".filter-b").removeClass("active")) {
-        $(this).removeClass("active");
-      }
-      $(this).addClass("active");
-    });
-
-    // SKILLS
-    $(function () {
-      $('.counter').counterUp({
-        delay: 10,
-        time: 2000
-      });
-
-    });
-  </script>
+  <script src="js/main.js"></script>
 </body>
 
 </html>
+
+
