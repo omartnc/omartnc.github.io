@@ -86,19 +86,70 @@
     });
   });
 
+  // Close with the exit animation: add the class, wait for animationend, close.
+  // Escape still closes natively (instant) — acceptable; the animated path
+  // covers the visible close interactions.
+  function closeAnimated(dialog) {
+    if (dialog.classList.contains("is-closing")) {
+      return;
+    }
+    dialog.classList.add("is-closing");
+    dialog.addEventListener(
+      "animationend",
+      function onEnd() {
+        dialog.classList.remove("is-closing");
+        dialog.close();
+        dialog.removeEventListener("animationend", onEnd);
+      },
+      { once: true }
+    );
+  }
+
   document.querySelectorAll("dialog.project-dialog").forEach(function (dialog) {
     dialog.querySelectorAll("[data-close]").forEach(function (button) {
       button.addEventListener("click", function () {
-        dialog.close();
+        closeAnimated(dialog);
       });
     });
     // Clicking the backdrop (target === dialog) closes
     dialog.addEventListener("click", function (event) {
       if (event.target === dialog) {
-        dialog.close();
+        closeAnimated(dialog);
       }
     });
   });
+
+  // Scroll reveals: sections fade+rise once when they enter the viewport.
+  // Falls back to "everything visible" without IntersectionObserver or when
+  // the user prefers reduced motion (CSS handles that case too).
+  var reduceMotion =
+    window.matchMedia && window.matchMedia("(prefers-reduced-motion: reduce)").matches;
+  var revealEls = document.querySelectorAll(".reveal");
+
+  function revealAll() {
+    revealEls.forEach(function (el) {
+      el.classList.add("is-revealed");
+    });
+  }
+
+  if (!("IntersectionObserver" in window) || reduceMotion || !revealEls.length) {
+    revealAll();
+  } else {
+    var revealObserver = new IntersectionObserver(
+      function (entries) {
+        entries.forEach(function (entry) {
+          if (entry.isIntersecting) {
+            entry.target.classList.add("is-revealed");
+            revealObserver.unobserve(entry.target);
+          }
+        });
+      },
+      { threshold: 0.12, rootMargin: "0px 0px -40px 0px" }
+    );
+    revealEls.forEach(function (el) {
+      revealObserver.observe(el);
+    });
+  }
 
   // Footer year
   var year = document.getElementById("year");
